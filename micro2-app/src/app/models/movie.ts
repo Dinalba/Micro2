@@ -1,14 +1,13 @@
 export interface Movie {    
-        id?: string;
-        title: string;
-        poster: string;
+        id?: string;  
+        date: string;
+        description: string;
         gender: string;
         language: string;
-        bucket: string;
-        description: string;
         popularity: string;
+        poster: string;   
+        budget: string;
         producers: string;
-        date: string;
         status: string; 
-    
+        title: string;    
 }
