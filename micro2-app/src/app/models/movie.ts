@@ -1,14 +1,14 @@
 export interface Movie {    
         id?: string;
-        titulo: string;
+        title: string;
         poster: string;
-        generos: string;
-        lenguaje: string;
-        presupuesto: string;
-        descripcion: string;
-        popularidad: string;
-        productoras: string;
-        fecha: string;
-        estado: string; 
+        gender: string;
+        language: string;
+        bucket: string;
+        description: string;
+        popularity: string;
+        producers: string;
+        date: string;
+        status: string; 
     
 }
