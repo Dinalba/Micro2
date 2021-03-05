@@ -4,7 +4,7 @@ export interface Movie{
   poster: string;
   generos: string;
   lenguaje: string;
-  presupuesto: number;
+  presupuesto: string;
   descripcion: string;
   popularidad: string;
   productoras: string;

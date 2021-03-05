@@ -9,10 +9,12 @@ import { MovieCardComponent } from './components/movie-card/movie-card.component
 import { MoviePageComponent } from './pages/movie-page/movie-page.component';
 import { MovieListComponent } from './components/movie-list/movie-list.component';
 import { SelectedMoviePageComponent } from './pages/selected-movie-page/selected-movie-page.component';
+
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireStorageModule } from '@angular/fire/storage';
-import { AngularFireAuth, AngularFireAuthModule } from '@angular/fire/auth';
+import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
+
 import { environment } from 'src/environments/environment';
 
 @NgModule({

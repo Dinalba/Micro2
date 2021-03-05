@@ -12,11 +12,6 @@ const routes: Routes = [
  {
    path:'movies',
    component: MoviePageComponent
- },
- {
-   path: 'movies/:movieid',
-   pathMatch: 'full',
-   component: SelectedMoviePageComponent
  }
 ];
 
