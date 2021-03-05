@@ -2,7 +2,9 @@
     <div class="post-list">
         <div class="wrapper">
             <div class="list-container">
-                
+                <ng-container *ngFor="let movie of movies">
+                    <app-movie-card [movies]="movie"></app-movie-card>
+                </ng-container>
             </div>
         </div>
     </div>

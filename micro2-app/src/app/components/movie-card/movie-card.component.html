@@ -1,0 +1,11 @@
+<a class="card-post" [routerLink]="['/movie', movie.id]">
+    <div class="card-img">
+      <img [src]="post.photo" alt="Post Photo" />
+    </div>
+    <div class="card-body">
+      <p class="tag">{{ movie.gender }}</p>
+      <h3 class="title">{{ movie.title  }}</h3>
+      <p class="description">{{ movie.description  }}</p>
+    </div>
+  </a>
+  
