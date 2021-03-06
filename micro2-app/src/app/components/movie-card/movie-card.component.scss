@@ -1,0 +1,42 @@
+@import "../../styles/variables.scss";
+
+.card-post {
+  display: block;
+  width: 250px;
+  height: 100%;
+  border-radius: 5px;
+  margin-top: 10%;
+  padding: 16px;
+  background-color: rgb(36, 36, 36);
+  /*background: lightblue;*/
+  /*color: rgba(0, 0, 0, 0.5);*/
+  color: rgb(255, 57, 156);
+  text-decoration: none;
+  margin: 10px 5px;
+
+  .card-body {
+    margin: 10px 0;
+
+    .description {
+      /*color: $dark;*/
+      color:rgb(255, 57, 156);
+    }
+
+    .tag {
+      margin-bottom: 10px;
+      /*color: $dark;*/
+      color: rgb(255, 57, 156);
+    }
+
+    .title {
+      font-size: 1.25em;
+      font-weight: normal;
+      text-transform: capitalize;
+      margin-bottom: 10px;
+      /*color: $dark;*/
+      color: white
+    }
+  }
+
+ 
+}
