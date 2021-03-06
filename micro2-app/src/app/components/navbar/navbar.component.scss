@@ -1,4 +1,3 @@
-
 .logo{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: rgb(255, 57, 156);
@@ -15,10 +14,8 @@
     
     background-color: rgb(36, 36, 36);
     width: 100%;
-    
-    
-    
     display: flex;
+    height: 6%;
     }
 
 .topnavbar .logo-img{
@@ -29,15 +26,14 @@
 .topnavbar .navbar-ul li{
     list-style-type: none;
     display: inline;
+
     }
 
 .topnavbar .navbar-ul li a {
     font-size: 20px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    /*color: rgb(19, 99, 204);*/
     margin: 0px 50px 0px 50px;
     text-decoration: none;
-    /* color: #1F3574;  command + k + c */
     text-transform: uppercase;
 
     }
