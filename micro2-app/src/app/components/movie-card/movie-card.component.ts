@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+
+import { Component, Input, OnInit, EventEmitter, Output } from '@angular/core';
+import { Movie } from 'src/app/models/movie';
+
+import { MoviesService } from '../../services/movies.service'; 
 
 @Component({
   selector: 'app-movie-card',
@@ -6,10 +10,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./movie-card.component.scss']
 })
 export class MovieCardComponent implements OnInit {
+  @Input() movie: Movie = null;            //
 
-  constructor() { }
+  constructor(private moviesSevice:MoviesService) { }
 
-  ngOnInit(): void {
+  ngOnInit(): void 
+  {
   }
 
+  /*onDelete(movie){
+    this.deleteMovies.emit(movie);
+  }*/
+  
 }

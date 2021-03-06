@@ -1,3 +1,4 @@
+import { Input } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import { Movie } from 'src/app/models/movie';
 import { MoviesService } from 'src/app/services/movies.service';
@@ -9,13 +10,22 @@ import { MoviesService } from 'src/app/services/movies.service';
 })
 export class MovieListComponent implements OnInit {
 
+  @Input() 
   movies: Array<Movie> = [];
 
   constructor(private movieService: MoviesService) { }
 
   ngOnInit(): void {
-    this.movieService.getAllMovies().subscribe((movies) => {
-      this.movies = movies;
+    this.getAllMovies();
+    this.movieService.getMovie().subscribe( movie =>  {
+      this.movies = movie; 
     });
   }
+
+  getAllMovies(): void{ 
+     this.movieService.getAllMovies().subscribe((movies) => {
+       this.movies = movies
+     })
+  };
+
 }
