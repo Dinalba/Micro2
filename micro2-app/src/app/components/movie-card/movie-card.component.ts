@@ -13,7 +13,7 @@ export class MovieCardComponent implements OnInit {
 
   @Input() movie: Movie = null;
 
-  constructor() { }
+  constructor(private moviesSevice:MoviesService) { }
 
   ngOnInit(): void 
   {
