@@ -1,5 +1,5 @@
-import { splitClasses } from '@angular/compiler';
-import { Component, Input, OnInit } from '@angular/core';
+
+import { Component, Input, OnInit, EventEmitter, Output } from '@angular/core';
 import { Movie } from 'src/app/models/movie';
 
 import { MoviesService } from '../../services/movies.service'; 
@@ -10,15 +10,16 @@ import { MoviesService } from '../../services/movies.service';
   styleUrls: ['./movie-card.component.scss']
 })
 export class MovieCardComponent implements OnInit {
-
-  @Input() movie: Movie = null;
+  @Input() movie: Movie = null;            //
 
   constructor(private moviesSevice:MoviesService) { }
 
   ngOnInit(): void 
   {
-    
   }
 
+  /*onDelete(movie){
+    this.deleteMovies.emit(movie);
+  }*/
   
 }
