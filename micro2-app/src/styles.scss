@@ -19,6 +19,59 @@
     padding-top: 2.5%;
   }
 
+  input,
+textarea,
+select {
+  outline: none;
+  display: block;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 40px;
+  height: 40px;
+  border: 1px solid $accent-2;
+  border-radius: 3px;
+  padding: 8px;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: inherit;
+  background: #fff;
+
+  &::placeholder {
+    color: $accent-2;
+  }
+}
+
+.form-container {
+  background: $light;
+  width: 35%;
+  margin: 0 auto;
+  padding: 16px;
+  border-radius: 5px;
+  align-content: center;
+
+  .input-container {
+    margin-bottom: 20px;
+
+    label {
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+  }
+
+  .btn-create{
+    
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: $dark;
+    border: 2px solid $dark;
+    padding: 13px 30px;
+    border-radius: 5px;
+    font-family: inherit;
+    cursor: pointer;
+  }
+}
+
   
 
   

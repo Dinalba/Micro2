@@ -8,7 +8,6 @@ import { HomeComponent } from './pages/home/home.component';
 import { MovieCardComponent } from './components/movie-card/movie-card.component';
 import { MoviePageComponent } from './pages/movie-page/movie-page.component';
 import { MovieListComponent } from './components/movie-list/movie-list.component';
-import { SelectedMoviePageComponent } from './pages/selected-movie-page/selected-movie-page.component';
 
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireStorageModule } from '@angular/fire/storage';
@@ -18,6 +17,9 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from 'src/environments/environment';
 
 import { HttpClientModule } from '@angular/common/http';
+import { LoginPageComponent } from './pages/login-page/login-page.component';
+import { AuthFormComponent } from './components/auth-form/auth-form.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,12 +29,14 @@ import { HttpClientModule } from '@angular/common/http';
     MovieCardComponent,
     MoviePageComponent,
     MovieListComponent,
-    SelectedMoviePageComponent
+    LoginPageComponent,
+    AuthFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-
+    FormsModule,
+    ReactiveFormsModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireStorageModule,
     AngularFireAuthModule,
