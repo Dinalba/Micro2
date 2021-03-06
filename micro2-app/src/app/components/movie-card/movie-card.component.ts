@@ -1,5 +1,8 @@
+import { splitClasses } from '@angular/compiler';
 import { Component, Input, OnInit } from '@angular/core';
 import { Movie } from 'src/app/models/movie';
+
+import { MoviesService } from '../../services/movies.service'; 
 
 @Component({
   selector: 'app-movie-card',
@@ -17,4 +20,5 @@ export class MovieCardComponent implements OnInit {
     
   }
 
+  
 }
