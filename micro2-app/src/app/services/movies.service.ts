@@ -26,7 +26,7 @@ export class MoviesService {
    }
 
    getMovie():Observable<Movie[]>{
-     return this.http.get<Movie[]>(this.movieUrl); 
+     return this.http.get<Movie[]>(`${this.movieUrl}${this.movieLimit}`); 
    }
 
    getAllMovies(): Observable<Movie[]>{
