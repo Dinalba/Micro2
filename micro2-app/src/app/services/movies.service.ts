@@ -18,6 +18,8 @@ export class MoviesService {
 
   movieUrl: string = 'http://www.foxmovies.com/movies/fight-club';
 
+  movieLimit = '?_limit = 5';
+
   constructor(private firestore: AngularFirestore, private http:HttpClient) {
 
     this.movieCollection = this.firestore.collection<Movie>('movies');
