@@ -5,6 +5,7 @@ import { Movie } from '../models/movie';
 import { map } from 'rxjs/operators';
 import {HttpClient, HttpHeaders } from '@angular/common/http' ;
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -19,7 +20,9 @@ export class MoviesService {
     this.movieCollection = this.firestore.collection<Movie>('movies');
    }
 
-
+   getMovie():Observable<Movie[]>{
+     return this.http.get<Movie[]>(this.movieUrl); 
+   }
 
    getAllMovies(): Observable<Movie[]>{
     return this.movieCollection.snapshotChanges().pipe(
