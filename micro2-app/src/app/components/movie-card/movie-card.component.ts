@@ -12,7 +12,9 @@ export class MovieCardComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(): void 
+  {
+    
   }
 
 }
